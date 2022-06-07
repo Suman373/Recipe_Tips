@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Tips</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3132/3132693.png">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <button id="scroll" onclick="scrollbutton()"><i class="fa fa-arrow-up"></i></button>
+    <header class="navi">
+        <div class="navbar" id="navbar">
+            <nav class="nav-container">
+                <a href="#navbar" class="nav-items">Home</a>
+                <a href="#about" class="nav-items">About</a>
+                <a href="#contact" class="nav-items">Contact Us</a>
+            </nav>
+        </div>
+        <div class="logo">
+            <h1>Recipe Tips Hub</h1>
+        </div>
+        <div class="search-menu">
+            <input type="text" id="search-input" placeholder="Search">
+            <span><button type="button" id="search-btn" class="btn"><i class="fas fa-search" id="search"></i></button></span>
+        </div>
+    </header>
+    <div class="image-container" id="image-container">
+        <button class="slide-left" type="button" id="slide-left">
+            <i id="left-icon" class="fa fa-angle-left"></i>
+        </button>
+        <button type="button" class="slide-right" id="slide-right">
+            <i id="right-icon" class="fa fa-angle-right"></i>
+        </button>
+        <div class="image-items" id="image-items">
+            <img src="./src/images/Batter-Fish.jpg" alt="" class="food-images"  id="1">
+            <img src="./src/images/steak-pie.jpg" alt="" class="food-images" id="2">
+            <img src="./src/images/cheese-fondue.jpg" alt="" class="food-images" id="3">
+            <img src="./src/images/bbq-chicken.jpeg" alt="" class="food-images" id="4">
+            <img src="./src/images/italian-pizza.jpeg" alt="" class="food-images" id="5">
+            <img src="./src/images/fish-orly.jpg" alt="" class="food-images" id="6">
+            <img src="./src/images/masala-macaroni.jpg" alt="" class="food-images" id="7">
+            <img src="./src/images/Lobster.jpg" alt="" class="food-images" id="8">
+            <img src="./src/images/shish-tawook.jpg" alt="" class="food-images" id="9">
+            <img src="./src/images/swedish-meatball.jpg" alt="" class="food-images" id="10">
+            
+        </div>
+    </div>
+    <div class="main-container" id="main-container">
+        <div class="heading" id="heading">
+            <h2 id="recipe-name">Batter Fish Fry</h2>
+            <span id="like-btn">
+                <button id="like-react" class="like-inactive like-active">
+                    <i id="like-heart" class="fa fa-heart">
+                    </i>
+                </button>
+                <p id="fav-message"></p>
+            </span>
+        </div>
+        <div class="recipe-box" id="recipe-box">
+            <div class="recipe-image-holder"       id="recipe-image-holder">
+                <img src="src/images/batter-fish-big.jpg" alt="">
+            </div>
+            <div class="recipe-content-holder" id="recipe-content-holder">
+                <p id="recipe-tips"> If your fish batter is not crispy enough when cooked try thinning the batter with a little more liquid. Pre-heating the oil to the proper temperature is also very important or the fish will absorb too much of the oil while cooking.</p>
+            </div>
+        </div>
+        <div class="rate-tip" id="rate-tip">
+            <h4>Rate this tip</h4>
+            <i id="rate-icon1" onclick="oneStar()" class="starsfa fa fa-star"></i>
+            <i id="rate-icon2" onclick="twoStar()" class="starsfa fa fa-star"></i>
+            <i id="rate-icon3" onclick="threeStar()" class="starsfa fa fa-star"></i>
+            <i id="rate-icon4" onclick="fourStar()" class="starsfa fa fa-star"></i>
+            <i id="rate-icon5" onclick="fiveStar()" class="starsfa fa fa-star"></i>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h2>About</h2>
+        <p id="about-text" class="about-text">
+            Who doesn't love to have all those mouth-watering &#127828; appetizing food &#127829; , be it starter or main course &#128525; or dessert? WEll, the list goes on and on!! Although when it comes to cooking or preparing meals , we often make mistakes which affects the flavour and overall taste of the dish &#128078; . This website provides some helpful tips which one must keep in mind while preparing some famous continental dishes &#128588;. We agree that all food lovers and homemade chefs didn't go to cooking school for learning benificial lessons on how to be a great chef. Thus, there is no need to worry as we are here for you all!! Happy EATING! &#128151;
+        </p>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p id="contact-text" class="contact-text">
+            Holaaa! If you are looking for contacting us for any kind of feedback or business, reach us at any of the handles given below! Looking forward to it!!
+            <div class="form">
+                <form action="./formsub.html">
+                    <label for="name">Name:
+                        <input type="text" required>
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" required>
+                    </label>
+                    <button type="submit" id="submit">Submit</button>
+
+                </form>
+               <div class="icon-holder">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-reddit"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+               </div>
+            </div>
+        </p>
+    </div>
+
+    <div class="footer">
+        <p id="footer-text">Copyright &copy; Recipe Tips Hub - Suman Roy All Rights Reserved 2022</p>
+    </div>
+<script src="./scripts/script.js"></script>
+</body>
+
+</html>
