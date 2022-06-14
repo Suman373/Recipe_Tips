@@ -10,7 +10,7 @@
 -  Deployed on netlify app for hosting..
 - I have future plans to work on this project and add more features along with detailing.
 
-## Badgeson netlify app[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+## Badge [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 ## How to Use? 
 
